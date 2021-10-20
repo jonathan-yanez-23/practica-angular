@@ -12,6 +12,7 @@ import { ActividadComponent } from './home/actividad/actividad.component';
 import { FuncionamientoComponent } from './home/funcionamiento/funcionamiento.component';
 import { SortPipe } from './pipes/sort.pipe';
 import { ApiheroesService } from './services/apiheroes.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ApiheroesService } from './services/apiheroes.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ApiheroesService],
   bootstrap: [AppComponent]

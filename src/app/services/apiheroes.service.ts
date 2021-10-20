@@ -15,7 +15,7 @@ export class ApiheroesService {
   // }
 
   // La api no puede devolver info de varios heroes a la vez
-  getCharactersById(id: string) {
+  getCharactersById(id: number) {
     return this.http.get(baseUrl+id);
   }
 }
