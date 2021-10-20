@@ -1,0 +1,5 @@
+<h2>Requisitos para ser un heroe</h2>
+<p>Entre los requisitos figurados para ser un héroe, están: </p>
+<ul *ngIf="listRequirements.length">
+    <li *ngFor="let requirement of listRequirements">{{ requirement }}</li>
+</ul>
