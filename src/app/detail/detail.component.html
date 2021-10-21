@@ -1,1 +1,24 @@
-<p>detail works!</p>
+<app-navbar></app-navbar>
+<div class="detail-component">
+    <h1>DETAIL</h1>
+    <h2>{{ heroeData.name }}</h2>
+    <img class="detail-component__img" [src]="heroeData.image" [alt]="heroeData.name">
+
+    <div class="heroe">
+        <div class="heroeelement Heroebiography">
+            <span class="heroeelement__biography"><b>BIOGRAFIA:</b><br> {{heroeData.biography}}</span>
+        </div>
+        <div class="heroeelement Heroepowerstats">
+            <span class="heroeelement__powerstats"><b>POWER STATS:</b><br> {{ heroeData.powerstats }}</span>
+        </div>
+        <div class="heroeelement Heroeappearance">
+            <span class="heroeelement_appearance"><b>APARIENCIA:</b><br> {{ heroeData.appearance }}</span>
+        </div>
+        <div class="heroeelement Heroework">
+            <span class="heroeelement__work"><b>TRABAJOS:</b><br> {{ heroeData.work }}</span>
+        </div>
+        <div class="heroeelement Heroeconnections">
+            <span class="heroelement__connections"><b>CONEXIONES:</b><br> {{ heroeData.connections }}</span>
+        </div>
+    </div>
+</div>

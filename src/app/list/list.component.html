@@ -1,12 +1,13 @@
+<app-navbar></app-navbar>
 <div class="Lista">
     <h1>LISTA</h1>
      <div *ngFor="let heroe of heroes">
-        <div class="Bannerheroe">
-            <img class="Bannerheroe__img" [src]="heroe.image" [alt]="heroe.name">
-            <h3 class="Bannereroe__name">{{ heroe.name }}</h3>
+        <div class="bannerheroe" [routerLink]="['.', heroe.id]">
+            <img class="bannerheroe__img" [src]="heroe.image" [alt]="heroe.name">
+            <h3 class="bannereroe__name">{{ heroe.name }}</h3>
         </div>
      </div>
 
-    <button>CARGAR MENOS</button>
-    <button>CARGAR MAS</button>
+    <button (click)="loadBefore()">CARGAR MENOS</button>
+    <button (click)="loadNext()">CARGAR MAS</button>
 </div>
