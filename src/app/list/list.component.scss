@@ -1,0 +1,15 @@
+.lista{
+    background-color: whitesmoke;
+}
+
+.Bannerheroe{
+    background-color: lightcoral;
+    margin: 10px;
+    display: flex;
+
+    flex-direction: row;
+    &__img{
+        width: 100px;
+        height: 100px;
+    }
+}

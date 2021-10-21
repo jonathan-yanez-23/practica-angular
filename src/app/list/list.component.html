@@ -1,4 +1,12 @@
-<div>
+<div class="Lista">
     <h1>LISTA</h1>
-    
+     <div *ngFor="let heroe of heroes">
+        <div class="Bannerheroe">
+            <img class="Bannerheroe__img" [src]="heroe.image" [alt]="heroe.name">
+            <h3 class="Bannereroe__name">{{ heroe.name }}</h3>
+        </div>
+     </div>
+
+    <button>CARGAR MENOS</button>
+    <button>CARGAR MAS</button>
 </div>
